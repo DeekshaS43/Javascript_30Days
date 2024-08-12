@@ -13,7 +13,7 @@ console.log(typeof villa);
 
 //6
 
-let villa1;
+let user1;
 let user2;
 let data3;
 let data4;
