@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+      //level1
+      //1
+      function drivingage() {
+      
+          const age = prompt("Enter your age:");
+          const ageNumber = Number(age);
+          if (ageNumber >= 18) {
+              alert(`You are${ageNumber} old enough to drive.`);
+          } else {
+            const yearsToWait = 18 - ageNumber;
+            alert(`You are not old enough to drive. You need to wait ${yearsToWait} more years.`);
+          }
+        }
+      
+
+      //2
+      function checkage() {
+        const myAge = 34;
+        const yourAge = prompt("Enter your age:");
+        if (yourAge > myAge) {
+          const difference = yourAge - myAge;
+          alert(`You are ${difference} years older than me.`);
+        } else if (yourAge < myAge) {
+          const difference = myAge - yourAge;
+          alert(`I am ${difference} years older than you.`);
+        } else {
+          console.log("We are the same age!");
+        }
+      }
+
+      //3
+
+      function greater() {
+        let a = prompt("Enter number a:");
+        let b = prompt("Enter number b:");
+        if (a > b) {
+          isGreater = true;
+        } else {
+          isGreater = false;
+        }
+        isGreater
+          ? alert(`${a} is greater than ${b}`)
+          : alert(`${a} is less than ${b}`);
+      }
+
+      //4
+    function evennumber() {
+        let num = prompt("Enter number:");
+        const number = Number(num);
+        if (number % 2 === 0) {
+          alert(`${number} is an even number.`);
+        } else {
+          alert(`${number} is an odd number.`);
+        }
+      }
+
+      //level2
+      //1
+      function marks(){
+        let mark=prompt('Enter the marks:')
+        mark = parseInt(mark)
+
+        switch(mark){
+            case (mark>=80&&mark<=100):
+                alert(`your grade is A`)
+                break;
+                case (mark>=70&&mark<=89):
+                alert(`your grade is B`)
+                break;
+                case (mark>=60&&mark<=69):
+                alert(`your grade is C`)
+                break;
+                case (mark>=50&&mark<=59):
+                alert(`your grade is D`)
+                break;
+                case (mark>=0&&mark<=49):
+                alert(`your grade is F`)
+                break;    
+        }
+      }
+      //2
+      function season(){
+        let month=prompt('Enter the month:')
+        switch(season){
+            case 'September':
+            case ' October':
+            case 'November':
+                alert(`the season is Autumn1`);
+                break;
+
+            case 'December':
+            case 'January':
+            case 'Feburary':
+                alert(`the season is winter`)  ;  
+                break;           
+                
+            case 'March':
+            case 'April':  
+            case 'May': 
+                alert(`the season is spring`);
+                break;
+                
+            case 'June': 
+            case 'July': 
+            case 'Auguest': 
+                alert(`the season is summer`); 
+                break;
+      }
+    }
+    //level 3
+    //1
+
+    function months(){
+        let monthname=prompt('Enter the monthname:')
+        switch(monthname){
+            case 'January':
+            case ' March':
+            case 'May':
+            case 'July':
+            case 'Auguest':
+            case 'October':
+            case 'December':
+                alert(`${monthname} has 31 days`);
+                break;
+            
+            case 'Feburary':
+                alert(`${monthname} has 28 days`)  ;             
+                break;
+           
+            case 'April':
+            case 'June':
+            case 'Sepetember':
+            case 'November':
+                alert(`${monthname} has 30 days`);
+               break; 
+        }
+    }
+
+
+
+    </script>
+  </head>
+
+  <body>
+    <div>
+        <div style="height:100%;display: flex; padding: 100px; margin: 0; box-sizing: border-box; justify-content: center; align-items: center; gap: 25px; background-color:rgb(129, 193, 193);">
+        <button onclick="drivingage()">Check Driving Age</button>
+        <button onclick="checkage()">Check Age</button>
+        <button onclick="greater()">Greater number</button>
+        <button onclick="evennumber()">Even</button>
+        <button onclick="marks()">Marks</button>
+        <button onclick="season()">Season</button>
+        <button onclick="months()">Months</button>
+        </div>
+    </div>
+
+
+  </body>
+</html>

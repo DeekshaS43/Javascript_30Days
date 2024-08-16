@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level2</title>
+    <script>
+        function findArea() {
+            let base = prompt('Enter the base:');
+            let height = prompt('Enter the height');
+            let area = base * height
+            alert(`the area of triangle is ${area}`)
+        }
+
+        function peremeter() {
+            let a = prompt('Enter side a:');
+            let b = prompt('Enter side b:');
+            let c = prompt('Enter side b:');
+            let peremeter = a + b + c
+            alert('the peremeter of triangle is ${peremeter}')
+        }
+        function rectangleArea() {
+            let length = prompt('Enter the length:');
+            let width = prompt('Enter the width:');
+            let area = length * width
+            alert('the area of rectangle is ${area}')
+        }
+
+        function rectangleParemeter() {
+            let length = prompt('Enter the length:');
+            let width = prompt('Enter the width:');
+            let paremeter = 2 * (length + width)
+            alert('the paremeter of rectangle is ${paremeter}')
+        }
+        function circleArea() {
+            let radius = prompt('Enter radius of circle:')
+            const pi = 3.14
+            let area = pi * r * r
+            alert(`the area of circle is ${area}`)
+
+        }
+        function circumference() {
+            let radius = prompt('Enter radius of circle:')
+            const pi = 3.14
+            let circumference = 2 * pi * r
+            alert(`the circumference of circle is ${circumference}`)
+        }
+
+
+       
+
+        function findY(){
+        let x_= prompt("Enter the value of x:")
+        let y_ = x_*x_ + +x_*6 + 9
+        alert(`the Value of Y is ${y_}`)
+        }
+
+        function payperson(){
+            let hours=prompt('Enter the no of hours:')
+            let pay=prompt('Enter the pay per hour:')
+            let total=hours*pay
+            alert(`Your weekly earning is ${total}.`)
+            
+        }
+
+        function namelength(){
+            let name=prompt('Enter the name:')
+            if(name.length>7){
+                alert(`your name is long`)
+            }
+            else{
+                alert(`your name is short`)
+            }
+        }
+         function namecomapre(){
+            let firstname=prompt('Enter your first name')
+            let lastname=prompt('Enter your last name')
+
+            if(firstname.length>lastname.length){
+                alert(`Your first name, Asabeneh is longer than your family name, Yetayeh`)
+            }
+         }
+
+        function agecomapre(){
+            let myAge =prompt('Enter age:');
+let yourAge = prompt('Enter age:');
+
+
+let ageDifference = myAge - yourAge;
+
+
+alert(`I am ${ageDifference} years older than you.`);
+        } 
+
+
+        function AgeCheck(){
+            const year = 2024
+            let myAge = prompt("Enter your birth year:")
+            let Age = year - myAge
+            if(Age < 18){
+                alert(`You are ${Age}. You are not eligible to drive.`)
+            }
+            else{
+                alert(`You are ${Age}. You are eligible to drive.`)
+            }
+        }
+
+        function SecCheck(){
+                    const sec = 31536000
+                    let live = prompt("Enter number of years you live:")
+                    let sec_live = live*sec
+                    alert(`You lived ${sec_live }`)
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <div>
+        <div style="height: 100%; display: flex; padding: 100px; margin: 0; box-sizing: border-box; justify-content: center; align-items: center; gap: 25px; background-color:rgb(129, 193, 193);  ">
+        <button onclick="findArea()">Area of Triangle</button>
+        <button onclick="peremeter()">Paremeter</button>
+        <button onclick="rectangleArea()">Area of Rectangle</button>
+        <button onclick="rectangleParameter()"> Paremeter of Triangle</button>
+        <button onclick="circleArea()">Area of Circle</button>
+        <button onclick="circumference()">Circumference</button>
+        <button onclick="findY()">Value of Y</button>
+        <button onclick="payperson()">Persons Pay</button>
+        <button onclick="namelength()">Length of Name</button>
+        <button onclick="namecompare()">Compare Name</button>
+        <button onclick="agecompare()">Compare Age</button>
+        <button onclick="agecheck()">Check Age</button>
+        <button onclick="secCheck()">Check Sec</button>
+    </div>
+    </div>
+
+</body>
+
+</html>
